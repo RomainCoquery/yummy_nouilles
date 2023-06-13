@@ -80,9 +80,13 @@ li a {
     font-family: var(--police-primary);
     font-size: var(--bureau-title2-policy-size);
     color: var(--text);
+    text-decoration: none;
+}
+
+.underline a:hover,
+.underline--active a {
     text-decoration: underline solid var(--primary) 4px;
     text-underline-offset: 4px;
-
 }
 
 .burger-icon span {
