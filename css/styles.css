@@ -8,24 +8,28 @@
     --background: #F3F3F3;
     --text: #000000;
     --text-light: #ffffff;
-    --mobile-header-policy-size: 40px;
-    --mobile-title-policy-size: 20px;
-    --mobile-title2-policy-size: 20px;
-    --mobile-body-high-light-policy-size: 16px;
+    --mobile-header-policy-size: 4rem;
+    --mobile-title-policy-size: 2rem;
+    --mobile-title2-policy-size: 2rem;
+    --mobile-body-high-light-policy-size: 1.6rem;
     --mobile-body-high-light-policy-weight: 600;
-    --mobile-body-policy-size: 16px;
-    --bureau-header-policy-size: 72px;
-    --bureau-title-policy-size: 24px;
-    --bureau-title2-policy-size: 24px;
-    --bureau-body-high-light-policy-size: 20px;
+    --mobile-body-policy-size: 1.6rem;
+    --bureau-header-policy-size: 7.2rem;
+    --bureau-title-policy-size: 2.4rem;
+    --bureau-title2-policy-size: 2.4rem;
+    --bureau-body-high-light-policy-size: 2rem;
     --bureau-body-high-light-policy-weight: 600;
-    --bureau-body-policy-size: 20px;
+    --bureau-body-policy-size: 2rem;
 }
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
 }
 
 
@@ -380,6 +384,7 @@ h2 {
         text-align: left;
         margin: 0;
         margin-bottom: 2rem;
+        font-size: var(--bureau-body-policy-size);
     }
 
     .logo {
@@ -464,9 +469,10 @@ h2 {
         margin-bottom: 1rem;
     }
 
-    .menu p {
+    .menu_entete p {
         display: block;
         float: left;
+        font-size: var(--bureau-body-policy-size);
     }
     
     .carte {
@@ -478,6 +484,11 @@ h2 {
         flex-direction: column;
         align-items: center;
         text-align: center;
+    }
+
+    .carte p {
+        display: flex;
+        font-size: var(--mobile-body-high-light-policy-size);
     }
 
     .logo_menu img{
