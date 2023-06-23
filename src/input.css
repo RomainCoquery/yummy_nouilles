@@ -1,0 +1,544 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;600;700&display=swap');
+
+:root {
+    --police-primary: "Bebas Neue", Verdana, sans-serif;
+    --police-secondary: "Montserrat", Verdana, sans-serif;
+    --primary: #D2483D;
+    --secondary: #000000;
+    --background: #F3F3F3;
+    --text: #000000;
+    --text-light: #ffffff;
+    --mobile-header-policy-size: 4rem;
+    --mobile-title-policy-size: 2rem;
+    --mobile-title2-policy-size: 2rem;
+    --mobile-body-high-light-policy-size: 1.6rem;
+    --mobile-body-high-light-policy-weight: 600;
+    --mobile-body-policy-size: 1.6rem;
+    --bureau-header-policy-size: 7.2rem;
+    --bureau-title-policy-size: 2.4rem;
+    --bureau-title2-policy-size: 2.4rem;
+    --bureau-body-high-light-policy-size: 2rem;
+    --bureau-body-high-light-policy-weight: 600;
+    --bureau-body-policy-size: 2rem;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: var(--background);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    color: var(--secondary);
+    font-size: var(--mobile-header-policy-size);
+    font-family: var(--police-primary);
+    font-weight: var(--mobile-body-high-light-policy-weight);
+    text-align: center;
+}
+
+h3 {
+    color: var(--secondary);
+    font-family: var(--police-primary);
+    font-size: var(--mobile-title2-policy-size);
+    text-decoration: underline solid var(--primary) 4px;
+    text-underline-offset: 4px;
+}
+
+p {
+    font-family: var(--police-secondary);
+}
+
+header {
+    margin-top: 20px;
+    width: 310px;
+    display: flex;
+    justify-content: space-between;
+}
+
+li {
+    display: none;
+    float: left;
+    list-style-type: none;
+}
+
+li a {
+    display: block;
+    text-align: center;
+    padding: 1rem;
+    font-family: var(--police-primary);
+    font-size: var(--bureau-title2-policy-size);
+    color: var(--text);
+    text-decoration: none;
+}
+
+.underline a:hover,
+.underline--active a {
+    text-decoration: underline solid var(--primary) 4px;
+    text-underline-offset: 4px;
+}
+
+.burger-icon span {
+    display:block;
+    width: 30px;
+    height: 5px;
+    background-color: var(--secondary);
+    margin: 6px 0;
+}
+
+.entreprise {
+    margin: 0 auto;
+    margin-top: 70px;
+}
+
+.entreprise p {
+    width: 180px;
+    text-align: center;
+    margin: 0 auto;
+    font-weight: var(--mobile-body-high-light-policy-weight);
+    font-size: var(--mobile-body-policy-size);
+    margin-bottom: 16px;
+}
+
+em {
+    font-style: normal;
+    color: var(--primary);
+}
+
+.cta {
+    width: 256px;
+    line-height: 48px;
+    background-color: var(--secondary);
+    font-size: var(--bureau-title-policy-size);
+    font-family: var(--police-primary);
+}
+
+.cta a {
+    text-decoration: none;
+    color: var(--text-light);
+}
+
+.logo img{
+    margin-top: 70px;
+    margin-bottom: 70px;
+    width: 232px;
+}
+
+.nos_adresses {
+    margin: 0 auto;
+    text-align: left;
+}
+
+.nos_adresses h3 {
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+.img_restaurant img {
+    width: 256px;
+}
+
+.nos_adresses strong {
+    font-family: var(--police-secondary);
+    font-size: var(--mobile-body-high-light-policy-size);
+}
+
+.nos_adresses address {
+    margin-bottom: 50px;
+}
+
+.nos_adresses address a {
+    text-decoration: none;
+    font-style: normal;
+    color: var(--text);
+    font-family: var(--police-secondary);
+}
+
+.commandez {
+    margin: 0 auto;
+    margin-top: 40px;
+    width: 375px;
+    background-color: var(--primary);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.commandez p {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    font-size: var(--mobile-body-policy-size);
+    font-weight: var(--mobile-body-high-light-policy-weight);
+    color: var(--text-light);
+}
+
+.commandez div {
+    margin-bottom: 40px;
+}
+
+.savoir_faire {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 256px;
+}
+
+.img_reseaux {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.savoir_faire p {
+    margin-top: 15px;
+}
+
+.contact {
+    margin-top: 70px;
+    width: 252px;
+    margin-bottom: 40px;
+}
+
+.question {
+    margin-top: 20px;
+}
+
+.question address {
+    font-style: normal;
+    color: var(--text);
+    font-family: var(--police-secondary);
+}
+
+.question address a {
+    text-decoration: none;
+    font-style: normal;
+    color: var(--text);
+    font-family: var(--text);
+}
+
+.question strong {
+    font-family: var(--police-secondary);
+    font-size: var(--mobile-body-high-light-policy-size);
+    font-weight: var(--mobile-body-high-light-policy-weight);
+}
+
+.footer {
+    margin-top: 40px;
+    width: 375px;
+    padding: 70px; 
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer a {
+    width: 36px;
+    height: 36px;
+}
+
+.footer a img {
+    width: 36px;
+    height: 36px; 
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    width: 310px;
+}
+
+.menu h1 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: var(--police-secondary);
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.menu p {
+    display: none;
+}
+
+.carte {
+    width: 310px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: var(--text-light);
+}
+
+.carte img {
+    width: 64px;
+}
+
+.carte h3 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.container_contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--text-light);
+}
+
+.adresses_restaurants {
+    padding-top: 50px;
+}
+
+.adresses_restaurants h1 {
+    margin-bottom: 20px;
+}
+
+.localisation article {
+    font-style: normal;
+    color: var(--text);
+    font-family: var(--police-secondary);
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.localisation article strong {
+    font-size: var(--mobile-title2-policy-size);
+    font-weight: 700;
+    text-align: left;
+}
+
+.localisation address {
+    text-align: left;
+}
+
+.localisation a {
+    text-decoration: none;
+    font-style: normal;
+    color: var(--text);
+    font-family: var(--text);
+}
+
+.plan {
+    display: none;
+}
+
+@media (min-width: 376px) and (max-width: 1440px) {
+
+    h1 {
+        font-size: var(--bureau-header-policy-size);
+        text-align: left;
+    }
+
+    h3 {
+        font-size: var(--bureau-title-policy-size);
+    }
+
+    header {
+        margin-top: 1rem;
+        width: 100%;
+        justify-content: start;
+        margin-left: 1rem;
+    }
+
+    .logo_small img{
+        width: 72px;
+    }
+
+    li {
+        display: block;
+    }
+
+    .burger-icon span {
+        display: none;
+    }
+
+    .entreprise {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        margin: 6rem;
+    }
+
+    .entreprise p {
+        width: 100%;
+        text-align: left;
+        margin: 0;
+        margin-bottom: 2rem;
+        font-size: var(--bureau-body-policy-size);
+    }
+
+    .logo {
+        width: 302px;
+    }
+
+    .logo img {
+        margin: 0;
+        width: 302px;
+    }
+
+    .nos_adresses {
+        width: 100%;
+    }
+
+    .restaurants {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .img_restaurants img {
+        width: 305px;
+    }
+
+    .commandez {
+        width: 100%;
+    }
+
+    .commandez p {
+        font-size: var(--bureau-body-policy-size);
+    }
+
+    .savoir_faire {
+        width: 82%;
+        margin: 6rem;
+    }
+
+    .savoir_faire p {
+        font-size: var(--bureau-body-policy-size);
+        text-align: justify;
+    }
+
+    .reseaux_sociaux {
+        width: 60%;
+    }
+
+    .img_reseaux_sociaux {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .contact {
+        width: 72%;
+    }
+
+    .question address {
+        font-size: var(--bureau-body-policy-size);
+    }
+
+    .footer {
+        width: 100%;
+        justify-content: end;
+    }
+
+    .footer a {
+        padding-right: 3rem;
+    }
+
+    .menu {
+        width: 80%;
+    }
+
+    .menu h1 {
+        margin-top: 0;
+        margin-bottom: 1rem;
+    }
+
+    .menu_entete {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .menu_entete p {
+        display: block;
+        float: left;
+        font-size: var(--bureau-body-policy-size);
+    }
+    
+    .carte {
+        width: 100%;
+        margin-top: 1rem;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .carte p {
+        display: flex;
+        font-size: var(--mobile-body-high-light-policy-size);
+    }
+
+    .logo_menu img{
+        width: 130px;
+    }
+
+    .carte h3 {
+        margin-top: 3rem;
+    }
+
+    .carte h2 {
+        font-size: var(--mobile-body-high-light-policy-size);
+        margin-top: 2rem;
+
+    }
+
+    .adresses_restaurants {
+        display: flex;
+        justify-content: right;
+        padding: 0;
+        width: 100%;
+    }
+
+    .adresses {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 90%;
+    }
+
+    .plan {
+        display: flex;
+        height: 700px;
+    }
+
+    .localisation h1 {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .localisation article {
+        margin-bottom: 3rem;
+        border-left: solid var(--primary) .2rem;
+    }
+
+    .localisation article strong {
+        font-size: var(--bureau-title2-policy-size);
+    }
+
+    .localisation address {
+        font-size: var(--bureau-title2-policy-size);
+    }
+}

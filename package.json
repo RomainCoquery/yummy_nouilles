@@ -1,0 +1,19 @@
+{
+  "name": "yummy_nouilles",
+  "version": "1.0.0",
+  "description": "***Note : ce projet est réalisé pendant ma formation Développeur Web et Web Mobile au [COS-CRPF Nanteau-sur-Lunain](https://www.fondationcos.org/centre-de-readaptation-professionnelle-et-de-formation-cos-crpf).***",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "postcss ./src/input.css -o  ./css/styles.css",
+    "watch:css": "postcss ./src/input.css -o  ./css/styles.css --watch"
+  },
+  "keywords": [],
+  "author": "Romain Coquery",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.4.14",
+    "cssnano": "^6.0.1",
+    "postcss": "^8.4.24",
+    "postcss-cli": "^10.1.0"
+  }
+}
